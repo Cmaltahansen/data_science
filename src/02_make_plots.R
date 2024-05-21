@@ -10,4 +10,9 @@ ggplot(d_2007, aes(x = gdpPercap, y = lifeExp)) +
   scale_x_log10() +
   labs(title = "Log-transformed y-axis (base 10)")
 
-"figs/lifeExp_vs_gdpPercap_2007.pdf"
+ 
+# Save the plot to a file
+ggsave(
+  filename = "figs/lifeExp_vs_gdpPercap_2007.pdf",  # File name
+)
+  
